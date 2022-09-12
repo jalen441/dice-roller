@@ -70,7 +70,7 @@ func getDieSize(stdin io.Reader) int {
 }
 
 func contains(validDice map[int]int, input int) bool {
-	for k, _ := range validDice {
+	for k := range validDice {
 		if input == k {
 			return true
 		}
